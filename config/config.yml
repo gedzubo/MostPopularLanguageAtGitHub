@@ -1,0 +1,11 @@
+defaults: &defaults
+  github_api_address: https://api.github.com/users/
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

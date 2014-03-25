@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  include ApplicationHelpers
+  
   def index
   end
   
@@ -7,5 +9,7 @@ class HomeController < ApplicationController
   end
   
   def search_for_language_post
+    @text = LanguageFinder.new({ user: params.fetch(:user) }).find
+    render 'search_for_language'
   end
 end
