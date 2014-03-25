@@ -34,27 +34,12 @@ group :development, :test do
   # Testing framework
   # Read more: https://github.com/rspec/rspec-rails
   gem "rspec-rails", "~> 2.14.0"
-  # factory_girl is a fixtures replacement with a straightforward definition syntax,
-  # support for multiple build strategies (saved instances,
-  # unsaved instances, attribute hashes, and stubbed objects),
-  # and support for multiple factories for the same class (user, admin_user, and so on),
-  #  including factory inheritance.
-  # Read more: https://github.com/thoughtbot/factory_girl_rails
-  gem "factory_girl_rails", "~> 4.4.1"
-  # A library for generating fake data such as names, addresses, and phone numbers.
-  # Read more: https://github.com/stympy/faker
-  gem "faker", "~> 1.2.0"
 end
 
 group :test do
-  # A library for generating fake data such as names, addresses, and phone numbers.
-  # Read more: https://github.com/stympy/faker
-  gem "faker", "~> 1.2.0"
   # Acceptance test framework for web applications
   # Read more: https://github.com/jnicklas/capybara
   gem "capybara", "~> 2.2.1"
-  # Read more: https://github.com/bmabey/database_cleaner
-  gem "database_cleaner", "~> 1.2.0"
 end
 
 group :production do
