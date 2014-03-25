@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-  include ApplicationHelpers
   
   def index
   end
